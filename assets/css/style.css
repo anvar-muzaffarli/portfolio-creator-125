@@ -1,0 +1,82 @@
+/* 
+
+------1------- header------
+-------2------- section 
+
+
+
+*/
+
+
+
+
+
+
+
+:root {
+    --primary-black:#000;
+}
+
+
+
+@import url('./reset.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+a {
+    text-decoration: none;
+}
+
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+header {
+    display: flex;
+    /* flex-direction: row; bu istiqameti mueyyenleshdirir: justify-content align-items */
+    justify-content: space-between;
+    align-items: center; /* cross axis y oxu */
+    padding-top: 41px;
+    padding-left: 7.03rem;
+    padding-right: 112.5px
+    /* background-color: red; */
+    /* margin-top: 41px; */
+
+}
+
+.fa-bars {
+    display: none;
+}
+
+header .nav-links a {
+    color: var(--primary-black);
+}
+
+
+@media (max-width:950px) {
+
+    header {
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+
+
+    /* child selector */
+    header > nav {
+        display: none;
+    }
+
+    .fa-bars {
+        display: flex;
+        font-size: 32px;
+    }
+
+
+}
+
