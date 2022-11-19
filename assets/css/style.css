@@ -15,8 +15,11 @@
 
 :root {
     --primary-black:#000;
+    --primary-orange: #FF8A56;
 }
-
+* {
+    outline: 1px solid red
+}
 
 
 @import url('./reset.css');
@@ -75,8 +78,89 @@ header .nav-links a {
     .fa-bars {
         display: flex;
         font-size: 32px;
+        cursor: pointer;
     }
 
 
 }
 
+
+/* INTRODUCTION SECTION  */
+
+.introduction {
+    padding-left: 112.5px;
+    padding-right: 112.5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.intro-left-side {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    padding-top: 117px;
+    min-width: 715px;
+}
+
+/* child selector */
+.intro-left-side > h1 {
+    font-size: 72px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.intro-left-side > h1 > span {
+    color: var(--primary-orange);
+}
+
+.intro-left-side p {
+    font-size: 22px;
+    font-weight: 400;
+    color:#666;
+    /* text-transform: uppercase; */
+}
+/* descendant selector */
+/* .intro-left-side h1 {
+
+} */
+
+.intro-right-side {
+    flex:1;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 70px;
+    min-width: 500px;
+}
+
+
+@media(max-width:1473px) and (min-width:768px) {
+    .intro-left-side {
+        flex-basis: 100%;
+        align-items: center;
+    }
+
+    .introduction {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .intro-right-side {
+        justify-content: center;
+    }
+}
+
+@media(max-width:768px) {
+    .introduction {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .intro-left-side {
+        min-width: 400px;
+        text-align: center;
+    }
+
+    body {
+        overflow-x:hidden;
+    }
+}
