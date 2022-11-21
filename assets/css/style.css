@@ -197,3 +197,38 @@ header .nav-links a {
         display: none;
     }
 }
+
+
+/* SERVICES SECTION */
+
+.services-section {
+    padding: 0 171px;
+}
+
+.services-section h6,
+ .services-section h1 {
+    text-align: center;
+ }
+
+ .services-section h6 {
+    text-transform: uppercase;
+ }
+
+ .services {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+ }
+
+ .service {
+/* background-color: teal; */
+min-width: 247px;
+padding: 20px;
+ }
+
+ .service ul {
+    list-style-type: square;
+    font-weight: 700;
+    list-style-position: inside;
+    padding-left: 0;
+ }
