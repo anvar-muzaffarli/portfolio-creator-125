@@ -18,7 +18,7 @@
     --primary-orange: #FF8A56;
 }
 * {
-    outline: 1px solid red
+    /* outline: 1px solid red */
 }
 
 
@@ -162,5 +162,38 @@ header .nav-links a {
 
     body {
         overflow-x:hidden;
+    }
+}
+
+
+/* TRUSTED BY SECTION  */
+
+.trusted-by-section h6 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.trusted-by-companies {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* .trusted-by-company:nth-child(even){
+    transform: scale(2);
+    transition: all .8s cubic-bezier(.76,.75,1,-1.12);
+} */
+
+@media(max-width:768px) and (min-width:576px) {
+    .trusted-by-company:nth-child(odd) {
+        display: none;
+    }
+
+
+}
+
+@media(max-width:575px) {
+    .trusted-by-company:not(:first-child) {
+        display: none;
     }
 }
